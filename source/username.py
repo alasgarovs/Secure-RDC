@@ -11,20 +11,20 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_UserName_window(object):
-    def setupUi(self, UserName_window):
-        UserName_window.setObjectName("UserName_window")
-        UserName_window.setWindowModality(QtCore.Qt.WindowModal)
-        UserName_window.resize(275, 100)
-        UserName_window.setMaximumSize(QtCore.QSize(275, 100))
+class Ui_UserName_Window(object):
+    def setupUi(self, UserName_Window):
+        UserName_Window.setObjectName("UserName_Window")
+        UserName_Window.setWindowModality(QtCore.Qt.WindowModal)
+        UserName_Window.resize(275, 100)
+        UserName_Window.setMaximumSize(QtCore.QSize(275, 100))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("/GhostConnect/ui_files/../icons/setting.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        UserName_window.setWindowIcon(icon)
-        self.verticalLayout = QtWidgets.QVBoxLayout(UserName_window)
+        icon.addPixmap(QtGui.QPixmap("../icons/setting.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        UserName_Window.setWindowIcon(icon)
+        self.verticalLayout = QtWidgets.QVBoxLayout(UserName_Window)
         self.verticalLayout.setObjectName("verticalLayout")
         self.gridLayout = QtWidgets.QGridLayout()
         self.gridLayout.setObjectName("gridLayout")
-        self.checkbox_save_me = QtWidgets.QCheckBox(UserName_window)
+        self.checkbox_save_me = QtWidgets.QCheckBox(UserName_Window)
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(9)
@@ -33,16 +33,20 @@ class Ui_UserName_window(object):
         self.gridLayout.addWidget(self.checkbox_save_me, 1, 1, 1, 1)
         spacerItem = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout.addItem(spacerItem, 1, 0, 1, 1)
-        self.input_username = QtWidgets.QLineEdit(UserName_window)
+        self.input_username = QtWidgets.QLineEdit(UserName_Window)
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(10)
         self.input_username.setFont(font)
-        self.input_username.setMaxLength(1000)
+        self.input_username.setInputMask("")
+        self.input_username.setText("")
+        self.input_username.setMaxLength(32767)
+        self.input_username.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.input_username.setCursorMoveStyle(QtCore.Qt.LogicalMoveStyle)
         self.input_username.setClearButtonEnabled(True)
         self.input_username.setObjectName("input_username")
         self.gridLayout.addWidget(self.input_username, 0, 0, 1, 4)
-        self.btn_enter = QtWidgets.QPushButton(UserName_window)
+        self.btn_enter = QtWidgets.QPushButton(UserName_Window)
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(10)
@@ -52,12 +56,14 @@ class Ui_UserName_window(object):
         self.gridLayout.addWidget(self.btn_enter, 2, 0, 1, 4)
         self.verticalLayout.addLayout(self.gridLayout)
 
-        self.retranslateUi(UserName_window)
-        QtCore.QMetaObject.connectSlotsByName(UserName_window)
+        self.retranslateUi(UserName_Window)
+        QtCore.QMetaObject.connectSlotsByName(UserName_Window)
 
-    def retranslateUi(self, UserName_window):
+    def retranslateUi(self, UserName_Window):
         _translate = QtCore.QCoreApplication.translate
-        UserName_window.setWindowTitle(_translate("UserName_window", "Portal"))
-        self.checkbox_save_me.setText(_translate("UserName_window", "Remember me"))
-        self.btn_enter.setText(_translate("UserName_window", "Continue"))
-        self.btn_enter.setShortcut(_translate("UserName_window", "Enter"))
+        UserName_Window.setWindowTitle(_translate("UserName_Window", "GhostConnect"))
+        self.checkbox_save_me.setText(_translate("UserName_Window", "Remember me"))
+        self.input_username.setToolTip(_translate("UserName_Window", "enter username"))
+        self.input_username.setPlaceholderText(_translate("UserName_Window", "username..."))
+        self.btn_enter.setText(_translate("UserName_Window", "Continue"))
+        self.btn_enter.setShortcut(_translate("UserName_Window", "Enter"))

@@ -2,26 +2,26 @@ import os
 import subprocess
 import sys
 import time
-from connect import Ui_main_window
-from username import Ui_UserName_window
+from connect import Ui_Main_Window
+from username import Ui_UserName_Window
 from db.database import DatabaseManager
 from PyQt5.QtGui import QKeySequence
 from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QShortcut, QMessageBox
 
 
-class Portal:
+class GhostConnect:
     def __init__(self):
         self.app = QApplication(sys.argv)
 
         # MAIN WINDOW
         self.Main_Window = QMainWindow()
-        self.Main_GUI = Ui_main_window()
+        self.Main_GUI = Ui_Main_Window()
         self.Main_GUI.setupUi(self.Main_Window)
         self.Main_Window.show()
 
         # USERNAME WINDOW
         self.Change_UserName_Window = QDialog()
-        self.Change_Username_GUI = Ui_UserName_window()
+        self.Change_Username_GUI = Ui_UserName_Window()
         self.Change_Username_GUI.setupUi(self.Change_UserName_Window)
 
         # COLOR and TITLE
@@ -128,5 +128,5 @@ class Portal:
 
 
 if __name__ == "__main__":
-    app_instance = Portal()
+    app_instance = GhostConnect()
     app_instance.run()

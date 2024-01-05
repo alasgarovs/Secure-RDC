@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>UserName_window</class>
- <widget class="QWidget" name="UserName_window">
+ <class>UserName_Window</class>
+ <widget class="QWidget" name="UserName_Window">
   <property name="windowModality">
    <enum>Qt::WindowModal</enum>
   </property>
@@ -20,7 +20,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Portal</string>
+   <string>GhostConnect</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -66,8 +66,26 @@
          <pointsize>10</pointsize>
         </font>
        </property>
+       <property name="toolTip">
+        <string>enter username</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
        <property name="maxLength">
-        <number>1000</number>
+        <number>32767</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Normal</enum>
+       </property>
+       <property name="placeholderText">
+        <string>username...</string>
+       </property>
+       <property name="cursorMoveStyle">
+        <enum>Qt::LogicalMoveStyle</enum>
        </property>
        <property name="clearButtonEnabled">
         <bool>true</bool>
