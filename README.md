@@ -1,6 +1,6 @@
 # Remote Desktop Privacy and Secure RDC
 
-## Why Privacy Matters in Remote Desktop Connections
+## Why Privacy matters in Remote Desktop Connections
 
 In an era where remote work and connectivity are more prevalent than ever, ensuring the privacy and security of remote desktop connections is paramount. Unauthorized access, data breaches, and traces of sensitive information can pose serious risks.
 ## Introducing Secure Remote Desktop Connection (Secure RDC)
