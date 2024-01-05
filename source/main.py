@@ -9,7 +9,7 @@ from PyQt5.QtGui import QKeySequence
 from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QShortcut, QMessageBox
 
 
-class GhostConnect:
+class Main:
     def __init__(self):
         self.app = QApplication(sys.argv)
 
@@ -27,7 +27,7 @@ class GhostConnect:
         # COLOR and TITLE
         self.color_error = 'background-color:#fa8f87'
         self.color_normal = 'background-color:white'
-        self.title = 'GhostConnect'
+        self.title = 'Secure RDC'
 
         self.error = 'error'
 
@@ -128,5 +128,5 @@ class GhostConnect:
 
 
 if __name__ == "__main__":
-    app_instance = GhostConnect()
+    app_instance = Main()
     app_instance.run()

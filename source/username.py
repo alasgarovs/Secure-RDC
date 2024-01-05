@@ -61,7 +61,7 @@ class Ui_UserName_Window(object):
 
     def retranslateUi(self, UserName_Window):
         _translate = QtCore.QCoreApplication.translate
-        UserName_Window.setWindowTitle(_translate("UserName_Window", "GhostConnect"))
+        UserName_Window.setWindowTitle(_translate("UserName_Window", "Secure RDC"))
         self.checkbox_save_me.setText(_translate("UserName_Window", "Remember me"))
         self.input_username.setToolTip(_translate("UserName_Window", "enter username"))
         self.input_username.setPlaceholderText(_translate("UserName_Window", "username..."))

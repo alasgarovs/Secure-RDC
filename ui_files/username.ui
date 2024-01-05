@@ -20,7 +20,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>GhostConnect</string>
+   <string>Secure RDC</string>
   </property>
   <property name="windowIcon">
    <iconset>

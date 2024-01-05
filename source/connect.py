@@ -86,7 +86,7 @@ class Ui_Main_Window(object):
 
     def retranslateUi(self, Main_Window):
         _translate = QtCore.QCoreApplication.translate
-        Main_Window.setWindowTitle(_translate("Main_Window", "GhostConnect"))
+        Main_Window.setWindowTitle(_translate("Main_Window", "Secure RDC"))
         self.btn_connect.setText(_translate("Main_Window", "Connect"))
         self.btn_connect.setShortcut(_translate("Main_Window", "Enter"))
         self.input_password.setToolTip(_translate("Main_Window", "enter password"))
