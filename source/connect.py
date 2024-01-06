@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/sabuhi/Documents/Python/GhostConnect/ui_files/connect.ui'
+# Form implementation generated from reading ui file 'C:\Users\Sabuhi\Documents\Python\Secure-RDC\ui_files\connect.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.10
 #
@@ -17,7 +17,7 @@ class Ui_Main_Window(object):
         Main_Window.resize(350, 160)
         Main_Window.setMaximumSize(QtCore.QSize(350, 160))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../icons/setting.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("C:\\Users\\Sabuhi\\Documents\\Python\\Secure-RDC\\ui_files\\../icons/favicon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Main_Window.setWindowIcon(icon)
         Main_Window.setAutoFillBackground(False)
         Main_Window.setIconSize(QtCore.QSize(24, 24))

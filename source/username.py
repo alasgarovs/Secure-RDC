@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/sabuhi/Documents/Python/GhostConnect/ui_files/username.ui'
+# Form implementation generated from reading ui file 'C:\Users\Sabuhi\Documents\Python\Secure-RDC\ui_files\username.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.10
 #
@@ -18,7 +18,7 @@ class Ui_UserName_Window(object):
         UserName_Window.resize(275, 100)
         UserName_Window.setMaximumSize(QtCore.QSize(275, 100))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../icons/setting.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../icons/favicon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         UserName_Window.setWindowIcon(icon)
         self.verticalLayout = QtWidgets.QVBoxLayout(UserName_Window)
         self.verticalLayout.setObjectName("verticalLayout")
