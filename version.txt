@@ -13,7 +13,7 @@ VSVersionInfo(
       [ 
       StringTable(
         u'040904b0',
-        [StringStruct(u'CompanyName', u'GafgaZero'),
+        [StringStruct(u'CompanyName', u'Sabuhi Alasgarov'),
         StringStruct(u'ProductName', u'Secure RDC'),
 	StringStruct(u'ProductVersion', u'1.1.0.0'),
         StringStruct(u'OriginalFilename', u'Secure Remote Desktop Connection'),
