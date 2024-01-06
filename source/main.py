@@ -13,30 +13,32 @@ class Main:
     def __init__(self):
         self.app = QApplication(sys.argv)
 
-        # MAIN WINDOW
+        # Create main windows
         self.Main_Window = QMainWindow()
         self.Main_GUI = Ui_Main_Window()
         self.Main_GUI.setupUi(self.Main_Window)
+        # Show main window
         self.Main_Window.show()
 
-        # USERNAME WINDOW
+        # Create username windows
         self.Change_UserName_Window = QDialog()
         self.Change_Username_GUI = Ui_UserName_Window()
         self.Change_Username_GUI.setupUi(self.Change_UserName_Window)
 
-        # COLOR and TITLE
+        # Set colors, title etc.
         self.color_error = 'background-color:#fa8f87'
         self.color_normal = 'background-color:white'
         self.title = 'Secure RDC'
-
         self.error = 'error'
 
+        # Connect and check db database
         self.db_manager = DatabaseManager()
         if self.db_manager.initialize_database() == self.error:
             self.read_error_log()
         if self.db_manager.change_values(None, None) == self.error:
             self.read_error_log()
 
+        # Shortcuts
         self.shortcut()
 
     def shortcut(self):
@@ -46,6 +48,7 @@ class Main:
         QShortcut(QKeySequence("Return"), self.Main_Window).activated.connect(self.connect_remote_desktop)
         self.Main_GUI.btn_connect.clicked.connect(self.connect_remote_desktop)
 
+    # Show username window
     def open_username_window(self):
         if self.db_manager.get_default_username() == self.error:
             self.read_error_log()
@@ -54,6 +57,7 @@ class Main:
             self.Change_Username_GUI.checkbox_save_me.setChecked(False)
             self.Change_Username_GUI.input_username.setText(self.db_manager.get_default_username())
 
+    # Change username
     def change_username(self):
         username = str(self.Change_Username_GUI.input_username.text()).upper()
 
@@ -71,6 +75,7 @@ class Main:
 
             self.Change_UserName_Window.close()
 
+    # Control ip and password and connect remote desktop
     def connect_remote_desktop(self):
         username = self.db_manager.get_default_username()
         if username == self.error:
@@ -108,6 +113,7 @@ class Main:
                     proc = subprocess.Popen(i, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
                     proc.communicate()
 
+    # Read error logs
     def read_error_log(self):
         try:
             with open("log/log.txt", "r") as log_file:
