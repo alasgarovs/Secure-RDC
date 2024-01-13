@@ -8,6 +8,8 @@ In an era where remote work and connectivity are more prevalent than ever, ensur
 
 This Python program provides a robust solution for managing Remote Desktop Connection (RDC) credentials and traces on Windows operating systems, enhancing your privacy and security. It empowers users to control and sanitize their remote desktop connections efficiently.
 
+![srdc](https://github.com/alasgarovs/Secure-RDC/assets/70092601/8aa3f1b3-dd17-47cf-a9dc-918b3677e065)
+
 ### Features
 
 - **Credential Management:** Easily store and manage RDP login information using Windows generic credentials.
