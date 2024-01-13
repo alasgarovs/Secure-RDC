@@ -33,5 +33,7 @@ This Python program provides a robust solution for managing Remote Desktop Conne
 - For enhanced security, delete traces of the connection as needed.
 
 **Note:** Ensure you have the necessary permissions before executing these commands.
-**Note:** If you want setup.exe file for free, you can contact with me.
+
+**Note:** If you want setup file for make test, you can contact with me.
+
 Feel free to contribute, report issues, or suggest improvements!
