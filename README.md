@@ -1,14 +1,9 @@
-# Remote Desktop Privacy and Secure RDC
-
-## Why Privacy matters in Remote Desktop Connections
-
-In an era where remote work and connectivity are more prevalent than ever, ensuring the privacy and security of remote desktop connections is paramount. Unauthorized access, data breaches, and traces of sensitive information can pose serious risks.
-
-## Secure Remote Desktop Connection (Secure RDC)
+# Secure Remote Desktop Connection (Secure RDC)
 
 This Python program provides a robust solution for managing Remote Desktop Connection (RDC) credentials and traces on Windows operating systems, enhancing your privacy and security. It empowers users to control and sanitize their remote desktop connections efficiently.
 
-![srdc](https://github.com/alasgarovs/Secure-RDC/assets/70092601/8aa3f1b3-dd17-47cf-a9dc-918b3677e065)
+![securerdc](https://github.com/alasgarovs/Secure-RDC/assets/70092601/24419a65-fe55-45e8-b55f-b6aabf679f5f)
+
 
 ### Features
 
@@ -33,7 +28,5 @@ This Python program provides a robust solution for managing Remote Desktop Conne
 - For enhanced security, delete traces of the connection as needed.
 
 **Note:** Ensure you have the necessary permissions before executing these commands.
-
-**Note:** If you want setup file for make test, you can contact with me.
 
 Feel free to contribute, report issues, or suggest improvements!
