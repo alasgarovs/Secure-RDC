@@ -13,13 +13,13 @@ This Python program provides a robust solution for managing Remote Desktop Conne
 
 ### How it works?
 
-1. Sets up credentials for the specified IP address with the provided username and password.
-2. Launches a Remote Desktop Connection to the specified IP address.
-3. After the connection is finished, deletes stored credentials for the specified IP address.
-4. Removes terminal credentials associated with the specified IP address.
-5. Clears Terminal Server Client settings for a clean slate.
-6. Deletes the hidden Default.rdp file from the user's Documents directory.
-7. Deletes the non-hidden Default.rdp file from the user's Documents directory.
+- Sets up credentials for the specified IP address with the provided username and password.
+- Launches a Remote Desktop Connection to the specified IP address.
+- After the connection is finished, deletes stored credentials for the specified IP address.
+- Removes terminal credentials associated with the specified IP address.
+- Clears Terminal Server Client settings for a clean slate.
+- Deletes the hidden Default.rdp file from the user's Documents directory.
+- Deletes the non-hidden Default.rdp file from the user's Documents directory.
 
 ### Usage Guidelines
 
