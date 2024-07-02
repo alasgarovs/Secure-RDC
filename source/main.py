@@ -95,7 +95,7 @@ class Main:
             else:
                 self.Main_GUI.input_ip_address.clear()
                 self.Main_GUI.input_password.clear()
-                creditionals = 'cmdkey /generic:' + ipaddress + ' /user:domain\\' + username + ' /pass:' + password
+                creditionals = 'cmdkey /generic:' + ipaddress + ' /user:' + username + ' /pass:' + password
                 connect = 'mstsc /v:' + ipaddress
                 delete_connection = 'cmdkey /delete:' + ipaddress
                 delete_connection_term = 'cmdkey /delete:TERMSRV/' + ipaddress
