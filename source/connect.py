@@ -17,7 +17,7 @@ class Ui_Main_Window(object):
         Main_Window.resize(350, 160)
         Main_Window.setMaximumSize(QtCore.QSize(350, 160))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("C:\\Users\\Sabuhi\\Documents\\Python\\Secure-RDC\\ui_files\\../icons/favicon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../icons/favicon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Main_Window.setWindowIcon(icon)
         Main_Window.setAutoFillBackground(False)
         Main_Window.setIconSize(QtCore.QSize(24, 24))
